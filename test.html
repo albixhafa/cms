@@ -1,12 +1,26 @@
-{!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store']) !!}
-
-\t\t<div class="form-group">
-\t\t\t{!! Form::label('name', 'Name: ') !!}
-\t\t\t{!! Form::text('name', null, ['class'=>'form-control']) !!}
-\t\t</div>
-
-\t\t<div class="form-group">
-\t\t\t{!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
-\t\t</div>
-\t
-\t{!! Form::close() !!}
+<table class="table">
+	<thead>
+	  <tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Email</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>John</td>
+		<td>Doe</td>
+		<td>john@example.com</td>
+	  </tr>
+	  <tr>
+		<td>Mary</td>
+		<td>Moe</td>
+		<td>mary@example.com</td>
+	  </tr>
+	  <tr>
+		<td>July</td>
+		<td>Dooley</td>
+		<td>july@example.com</td>
+	  </tr>
+	</tbody>
+  </table>
